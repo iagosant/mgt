@@ -1,0 +1,27 @@
+<%= form_for(donee) do |f| %>
+  <% if donee.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(donee.errors.count, "error") %> prohibited this donee from being saved:</h2>
+
+      <ul>
+      <% donee.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :blurb %>
+    <%= f.text_area :blurb %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
