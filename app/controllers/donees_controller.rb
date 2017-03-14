@@ -10,7 +10,7 @@ class DoneesController < ApplicationController
   # GET /donees/1
   # GET /donees/1.json
   def show
-    byebug
+    # byebug
     @donee = Donee.first
   end
 
