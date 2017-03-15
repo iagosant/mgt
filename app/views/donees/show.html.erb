@@ -1,9 +1,69 @@
-<p id="notice"><%= notice %></p>
+    <span id="background">
+
+        <img class="image">
+            <%= image_tag("mike_@lovett-productions.jpg", width:'693px', height: '1038px') %>
+        </img>
+
+    </span>
+
+    <!-- UPPER SECTION DIV -->
+    <div class="uppersection">
+        <!-- UPPER SECTION DIV -->
+
+        <h2 id="websiteName">TO MIKE, FROM US</h2>
+        <hr id="webNameUnderline">
+        <!-- <br> -->
+
+        <h4 id="tagline">Help us keep Mike's passion for cinema alive</h4>
+        <h3>MICHAEL G. THIBODEAU's MEMORIAL SCHOLARSHIP</h3>
+
+        <video width="585px" height="439px" src="videofile.ogg" autoplay poster="videoStill.jpg"></video >
+
+        <h3 id="info">20 days left, only $19,000 to go.</h3>
+
+        <button class="button">Learn More</button>
+
+        <!-- UPPER SECTION DIV -->
+    </div>
+    <!-- UPPER SECTION DIV -->
+
+    <!-- LOWER SECTION DIV -->
+    <div class="lowersection">
+        <!-- LOWER SECTION DIV -->
+
+        <div class="blurb">
+            <p><%= @donee.blurb %></p>
+        </div>
+        <div class="donee">
+            <p>-
+                <%= @donee.name %></p>
+        </div>
+
+        <div class="language">
+            To honor Michael and keep his passion of working in film and television alive and helping other dreamers fulfill their goals, a scholarship fund called the Michael G. Thibodeau Jr. Memorial Scholarship has been created in his honor at his alma mater,
+            Savannah College of Art & Design (SCAD).
+            <br>
+            If we reach the goal, the fund will be endowed and will live on in Michael's name, growing and providing more and more scholarship awards to countless future generations of students that share Michael's passion.
+        </div>
+
+        <button class="button" id="donate">Donate</button>
+        <div class="instructions">
+            <p>
+              In the donation section of the form, click the Scholarship button. In the next field, click the dropdown arrow and scroll down to the Michael G. Thibodeau Jr. Memorial Scholarship.
+            </p>
+        </div>
+
+        <!-- <p id="notice"><%#= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @donee.name %>
-</p>
+<strong>Name:</strong>
+<%#= @donee.name %>
+</p> -->
+
+        <!-- LOWER SECTION DIV -->
+    </div>
+    <!-- LOWER SECTION DIV -->
+
 
 <!-- <p>
   <strong>Blurb:</strong>
