@@ -160,7 +160,9 @@ h3, #info{
 }
 
 .lowersection{
-width: 1365px;
+  width: 1440px;
+  margin-left: 75px;
+  margin-right: 780px;
 }
 
 .blurb{
@@ -187,17 +189,18 @@ width: 1365px;
 }
 
 .language{
-  width: 993px;
+  width: 1023px;
   height: 162px;
   font-family: "Helvetica Neue";
   font-size: 20px;
   text-align: center;
   line-height: 27px;
   color: #000000;
+  margin-left: 180px;
 }
 
 button, .button, #donate{
-  margin-right: 588px;
+  margin-left: 588px;
 }
 
 .instructions{
@@ -209,4 +212,6 @@ button, .button, #donate{
   text-align: center;
   line-height: 25px;
   color: #000000;
+  margin-top: 25px;
+  margin-left: 362px;
 }
