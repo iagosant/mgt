@@ -10,8 +10,10 @@ class DoneesController < ApplicationController
   # GET /donees/1
   # GET /donees/1.json
   def show
+    # Date.strptime('03-02-2001', '%d-%m-%Y')
     # byebug
     @donee = Donee.first
+    # byebug
   end
 
   # GET /donees/new
