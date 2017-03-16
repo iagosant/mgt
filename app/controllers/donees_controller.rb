@@ -1,5 +1,5 @@
 class DoneesController < ApplicationController
-  # before_action :set_donee, only: [:show, :edit, :update, :destroy]
+  before_action :set_donee, only: [:show, :edit, :update, :destroy]
 
   # GET /donees
   # GET /donees.json
@@ -12,8 +12,7 @@ class DoneesController < ApplicationController
   def show
     # Date.strptime('03-02-2001', '%d-%m-%Y')
     # byebug
-    @donee = Donee.first
-    # byebug
+    # @donee = Donee.first
   end
 
   # GET /donees/new
@@ -74,6 +73,6 @@ class DoneesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_donee
       # byebug
-      @donee = Donee.find(params[:id])
+      @donee = Donee.find_by_name(params[:name])
     end
 end
