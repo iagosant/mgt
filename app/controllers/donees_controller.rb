@@ -13,6 +13,13 @@ class DoneesController < ApplicationController
     # Date.strptime('03-02-2001', '%d-%m-%Y')
     # byebug
     @donee = Donee.first
+    # @donee_names = []
+    #
+    # donees = Donee.all
+    # donees.each do |n|
+    #   n.name >> @donee_names
+    # end
+    # byebug
   end
 
   # GET /donees/new

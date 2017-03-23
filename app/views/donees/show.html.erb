@@ -1,71 +1,86 @@
-    <span id="background">
+<span id="background">
 
-        <img class="image">
-            <%= image_tag("mike_@lovett-productions.jpg", width:'693px', height: '1038px') %>
-        </img>
+    <img class="image">
+        <%= image_tag("mike_@lovett-productions.jpg", width:'693px', height: '1038px') %>
+    </img>
 
-    </span>
+</span>
 
+<!-- UPPER SECTION DIV -->
+<div class="uppersection">
     <!-- UPPER SECTION DIV -->
-    <div class="uppersection">
-        <!-- UPPER SECTION DIV -->
+<div class="menu">
+    <ul >
+        <li>
+          <h2 id="websiteName">TO MIKE, FROM US</h2>
+          <!-- <hr id="webNameUnderline"> -->
+        </li>
+        <li>
+          <h2 id="aboutMike">ABOUT MIKE</h2>
+        </li>
+        <li>
+          <h2 id="inOurWords">IN OUR WORDS</h2>
+        </li>
+    </ul>
+  </div>
 
-        <h2 id="websiteName">TO MIKE, FROM US</h2>
-        <hr id="webNameUnderline">
-        <!-- <br> -->
+    <h4 id="tagline">Help us keep Mike's passion for cinema alive. Support the:</h4>
+    <h3 id="scholarship">MICHAEL G. THIBODEAU Jr. MEMORIAL SCHOLARSHIP</h3>
 
-        <h4 id="tagline">Help us keep Mike's passion for cinema alive. Support the:</h4>
-        <h3 id="scholarship">MICHAEL G. THIBODEAU Jr. MEMORIAL SCHOLARSHIP</h3>
-
-        <video width="585px" height="439px" src="https://s3-us-west-2.amazonaws.com/tomikefrom/MIKE+VIDEO+FINAL.mp4" autoplay poster="" autoplay="autoplay"></video >
-
-        <h3 id="info">20 days left, only $19,000 to go.</h3>
-
-        <button class="button">Learn More</button>
-
-        <!-- UPPER SECTION DIV -->
+    <div class="video">
+        <video src="https://s3-us-west-2.amazonaws.com/tomikefrom/MIKE+VIDEO+FINAL.mp4" autoplay poster="" autoplay="autoplay"></video >
+        <div class="overlay valign-wrapper" id="video_overlay">
+            <div class="text center">
+                <i class="volume material-icons" font-size="50px">volume_off</i>
+            </div>
+        </div>
     </div>
+
+    <h3 id="info">20 days left, only $19,000 to go.</h3>
+
+    <button class="button">Learn More</button>
+
     <!-- UPPER SECTION DIV -->
+</div>
+<!-- UPPER SECTION DIV -->
 
+<!-- LOWER SECTION DIV -->
+<div class="lowersection">
     <!-- LOWER SECTION DIV -->
-    <div class="lowersection">
-        <!-- LOWER SECTION DIV -->
 
-        <div class="blurb">
+    <!-- <div class="blurb">
             <p><%= @donee.blurb %></p>
         </div>
         <div class="donee">
             <p>-
                 <%= @donee.name %></p>
-        </div>
+        </div> -->
 
-        <div class="language">
-            To honor Michael and keep his passion of working in film and television alive and helping other dreamers fulfill their goals, a scholarship fund called the Michael G. Thibodeau Jr. Memorial Scholarship has been created in his honor at his alma mater,
-            Savannah College of Art & Design (SCAD) by his parents, Barbara and Michael Thibodeau, Sr.
-            <br>
-            If we reach the goal, the fund will be endowed and will live on in Michael's name, growing and providing more and more scholarship awards to countless future generations of students that share Michael's passion.
-        </div>
-
+    <div class="language">
+        To honor Michael and keep his passion of working in film and television alive and helping other dreamers fulfill their goals, a scholarship fund called the Michael G. Thibodeau Jr. Memorial Scholarship has been created in his honor at his alma mater,
+        Savannah College of Art & Design (SCAD) by his parents, Barbara and Michael Thibodeau, Sr.
+        <br>
+        If we reach the goal, the fund will be endowed and will live on in Michael's name, growing and providing more and more scholarship awards to countless future generations of students that share Michael's passion.
         <button onclick="location.href='https://web-ssl-2.scad.edu/banner/plsql/hwakgift.P_Index'" type="button" class="button" id="donate">Donate</button>
-
         <div class="instructions">
-            <p>
-              PLEASE NOTE: Under "Donation Information", select "Scholarship," then in the "Designate Donation To:" dropdown,
-              choose the "Michael G. Thibodeau Jr. Memorial Scholarship."
-            </p>
+          <p>
+            PLEASE NOTE: Under "Donation Information", select "Scholarship," then in the "Designate Donation To:" dropdown, choose the "Michael G. Thibodeau Jr. Memorial Scholarship."
+          </p>
         </div>
+    </div>
 
-        <!-- <p id="notice"><%#= notice %></p>
+
+
+    <!-- <p id="notice"><%#= notice %></p>
 
 <p>
 <strong>Name:</strong>
 <%#= @donee.name %>
 </p> -->
 
-        <!-- LOWER SECTION DIV -->
-    </div>
     <!-- LOWER SECTION DIV -->
-
+</div>
+<!-- LOWER SECTION DIV -->
 
 <!-- <p>
   <strong>Blurb:</strong>
