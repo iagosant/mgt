@@ -14,3 +14,44 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function() {
+
+  $("#video_overlay .text").click(function(){
+      var $this = $(this);
+      var $container = $(".video");
+      var volume = $("video",$container).prop('muted'); // alert("The paragraph was clicked.");
+      // alert(volume)
+      if (volume) {
+        $("video").prop('muted', false);
+        $("i.volume",$this).html('volume_off');
+      }
+      else {
+        $("video").prop('muted', true);
+        $("i.volume",$this).html('volume_up');
+      };
+    });
+
+// $( "video" ).hover(function() {
+//     var volume = $("video").prop('muted');
+//     alert(volume)
+//     if (volume){
+//     $( "#video_overlay" ).append( '<i class="volume-on material-icons" width="585px" height="439px" display="block" font-size="50px">volume_off</i>');
+//   }, function(){
+//     $( "#video_overlay" ).empty();
+//   }
+// }
+// );
+
+
+$("video").click(function(){
+var volume = $("video").prop('muted'); // alert("The paragraph was clicked.");
+alert(volume)
+if (volume) {
+$("video").prop('muted', false);
+}
+else {
+  $("video").prop('muted', true);
+};
+});
+
+});

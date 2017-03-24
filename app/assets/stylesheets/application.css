@@ -14,8 +14,11 @@
  *= require_self
  */
 
+
 /*
 <<<<<<< HEAD*/
+
+
 /*@font-face{
    font-family: 'ProximaNova-Light';
    src:url('<%= asset_path("ProximaNova-Light.eot") %>');
@@ -72,16 +75,13 @@ html {
     font-family: 'ProximaNova-Light'!important;
 }
 
-body, .background {
-
+.container {
+    margin: 0 auto;
+    width: 1365px;
+    height: 1928px;
+    padding-left: 75px;
 }
 
-.container{
-  margin: 0 auto;
-  width: 1440px;
-  height: 1928px;
-  padding-left: 75px;
-}
 
 /*div, .uppersection{
 margin-left: 75px;
@@ -97,19 +97,40 @@ margin-right: 780px;
 }
 
 
+/*=======
+#background, img {
+    float: right;
+}
 
-h2, #websiteName{
-    padding-top: 25px;
-    width: 202px;
+.uppersection {
+  height: 1038px;
+}
+>>>>>>> ffcef37df95ade54b313fccc5ab9794d3144cf16*/
+
+div .menu {
+    padding-top: 70px;
+    width: 585px;
     height: 24px;
+    font-size: 18px;
+}
+
+h2 {
     font-family: "Helvetica Neue";
-    font-size: 20px;
     font-weight: bold;
     line-height: 25px;
     color: #7A7A7A;
+    float: left;
 }
 
-hr, #webNameUnderline{
+#aboutMike {
+    margin-left: 79px;
+}
+
+#inOurWords {
+    margin-left: 79px;
+}
+
+#webNameUnderline {
     float: left;
     box-sizing: border-box;
     width: 193px;
@@ -117,29 +138,64 @@ hr, #webNameUnderline{
     border: 2px solid #F8E71C;
 }
 
-h4, #tagline{
+#partialHome{
+  height: 863px;
+  width: 585px;
+}
+
+#partiaProfessionalBio{
+  padding-top: 205px;
+  height: 739px;
+  width: 585px;
+}
+
+#professionalBio{
+  position: 0 absolute;
+  text-align: justify;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+#partialInOurWords{
+  padding-top: 205px;
+  height: 739px;
+  width: 585px;
+}
+
+#doneeWords{
+  position: 0 absolute;
+  text-align: justify;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+h4, #tagline {
     width: 585px;
-    height: 35px;
     margin-top: 81px;
     font-family: "Helvetica Neue";
-    font-size: 29px !important;
+    font-size: 28px !important;
     line-height: 36px;
     color: #000000;
-    letter-spacing: -1px;
+    /*letter-spacing: -1px;*/
     padding-bottom: 10px;
 }
 
-h3, #scholarship{
-    padding-top: 27px;
-    width: 600px;
+h3, #scholarship {
+    padding-top: 45px;
+    width: 585px;
     height: 108px;
     font-family: "Helvetica Neue";
-    font-size: 45px;
+    font-size: 43px;
     font-weight: bold;
     line-height: 55px;
     color: #000000;
-    letter-spacing: -1px;
+    /*letter-spacing: 2px;*/
 }
+
 
 video{
     /*margin-top: 35px;*/
@@ -182,16 +238,14 @@ video{
   opacity: 0.75;
 }
 
-h3, #info{
-  width: 521px;
-  height: 42px;
-  font-family: "Helvetica Neue";
-  font-size: 35px;
-  font-weight: bold;
-  line-height: 43px;
-  color: #000000;
+.video {
+    margin-top: 35px;
+    position: relative;
+    max-width: 585px;
+    max-height: 329.06px;
 }
 
+/*<<<<<<< HEAD*/
 .button{
   width: 264px;
   height: 64px;
@@ -205,67 +259,143 @@ h3, #info{
   color: #000000;
   border: none;
   margin-top: 28px;
+/*=======
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+>>>>>>> ffcef37df95ade54b313fccc5ab9794d3144cf16*/
 }
 
-.lowersection{
-  width: 1440px;
-  margin-left: 75px;
-  margin-right: 780px;
-  margin-top: 100px;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7A7A7C;
 }
 
-.blurb{
-  width: 1216px;
-  font-family: "Helvetica Neue";
-  font-size: 25px;
-  font-style: italic;
-  text-align: center;
-  line-height: 37px;
-  color: #000000;
-  margin-top: 117px;
+.video:hover .overlay {
+    opacity: 0.75;
 }
 
-.donee{
-  text-align: center;
-  width: 1216px;
-  font-family: "Helvetica Neue";
-  font-size: 25px;
-  font-style: italic;
-  text-align: center;
-  line-height: 37px;
-  color: #000000;
+
+/*
+#videowrap{
+    object-fit: contain;
+}*/
+
+.material-icons {
+    font-size: 50px;
+    color: #F8E71C
 }
 
-.language{
-  width: 1023px;
-  height: 162px;
-  font-family: "Helvetica Neue";
-  font-size: 20px;
-  text-align: center;
-  line-height: 27px;
-  color: #000000;
-  margin-left: 180px;
-  margin-top: 20px;
+
+/*
+#videobox{
+  position: relative;
 }
 
-#donate{
-  margin-left: 560px;
+video, .volume-on{
+  /*opacity: 0.5;*/
+
+
 }
 
-.instructions{
-  width: 650px;
-  height: 72px;
-  font-family: "Helvetica Neue";
-  font-size: 20px;
-  font-weight: 500;
-  text-align: center;
-  line-height: 25px;
-  color: #000000;
-  margin-top: 25px;
-  margin-left: 342px;
+/*div:hover #video_overlay{
+  position:absolute;
+  z-index:300000;
+  bottom:50%;
+  left:20%;
+}*/
+h3, #info {
+    width: 521px;
+    height: 42px;
+    font-family: "Helvetica Neue";
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #000000;
 }
+a, .button {
+    width: 264px;
+    height: 64px;
+    background-color: #F8E71C;
+    box-shadow: 0 2px 7px 0 rgba(102, 122, 142, 0.4);
+    font-family: "Helvetica Neue";
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    color: #000000;
+    border: none;
+    margin-top: 28px;
+}
+.lowersection {
+    /*width: 1440px;*/
+    /*margin-left: 75px;*/
+    /*margin-right: 780px;*/
+    margin-top: 70px;
+}
+.blurb {
+    width: 1216px;
+    font-family: "Helvetica Neue";
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    line-height: 37px;
+    color: #000000;
+    margin-top: 117px;
+}
+.donee {
+    text-align: center;
+    width: 1216px;
+    font-family: "Helvetica Neue";
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    line-height: 37px;
+    color: #000000;
+}
+.language {
+  margin: 0 auto;
+    width: 76%;
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    text-align: center;
+    line-height: 27px;
+    color: #000000;
+}
+#donate {
+    /*margin-left: 560px;*/
+}
+.instructions {
+  margin: 0 auto;
+    width: 650px;
+    height: 72px;
+    font-family: "Helvetica Neue";
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 25px;
+    color: #000000;
+    margin-top: 25px;
+    /*margin-left: 342px;*/
+}
+
 /*======= THURSDAY PULL 3:11 pm*/
- /*@font-face{
+
+/*@font-face{
     font-family: 'ProximaNova-Light';
     src:url('<%= asset_path("ProximaNova-Light.eot") %>');
     src:url('<%= asset_path("ProximaNova-Light.eot")%>?#iefix') format('embedded-opentype'),
@@ -275,7 +405,8 @@ h3, #info{
     font-weight: normal;
     font-style: normal;
   }*/
- /*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
      margin: 0;
      padding: 0;
      border: 0;
@@ -284,44 +415,50 @@ h3, #info{
      vertical-align: baseline;
  }
  /* HTML5 display-role reset for older browsers */
- /*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+
+/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
      display: block;
  }
- body {
+ body{
      line-height: 1;
  }
- ol, ul {
+ ol, ul{
      list-style: none;
  }
- blockquote, q {
+ blockquote, q{
      quotes: none;
  }
- blockquote:before, blockquote:after, q:before, q:after {
+ blockquote:before, blockquote:after, q:before, q:after{
      content: '';
      content: none;
  }
- table {
+ table{
      border-collapse: collapse;
      border-spacing: 0;
  }
  /***********SANTIAGO's STYLE**********/
- /*html {
+
+/*html{
      font-family: 'ProximaNova-Light'!important;
  }
- body, .background {
+ body, .background{
      width: 1440px;
      height: 1928px;
  }
- #background, img {
+ #background, img{
      float: right;
  }
- div, .uppersection {
+ div, .uppersection{
      /*height: 1038px;
      margin-left: 75px;
      margin-right: 780px;
  }
+<<<<<<< HEAD
 
  h2, #websiteName {
+=======
+ h2, #websiteName{
+>>>>>>> ffcef37df95ade54b313fccc5ab9794d3144cf16
      padding-top: 70px;
      width: 202px;
      height: 24px;
@@ -331,14 +468,14 @@ h3, #info{
      line-height: 25px;
      color: #7A7A7A;
  }
- hr, #webNameUnderline {
+ hr, #webNameUnderline{
      float: left;
      box-sizing: border-box;
      width: 193px;
      height: 3px;
      border: 2px solid #F8E71C;
  }
- h4, #tagline {
+ h4, #tagline{
      width: 585px;
      height: 35px;
      margin-top: 82px;
@@ -347,7 +484,7 @@ h3, #info{
      line-height: 36px;
      color: #000000;
  }
- h3 {
+ h3{
      padding-top: 27px;
      width: 600px;
      height: 108px;
@@ -357,7 +494,7 @@ h3, #info{
      line-height: 55px;
      color: #000000;
  }
- video {
+ video{
      margin-top: 70px;
      width: 585px;
      height: 439px;
@@ -440,7 +577,8 @@ h3, #info{
    color: #000000;
    margin-top: 25px;
    margin-left: 342px;
- }*//*/
+ }*/
+/*/
 /*>>>>>>> 89d3273b446e598572036d2ec2ec09e27b2ca760*/
 /*** MENU *****/
 #primary_nav_wrap
