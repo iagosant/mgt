@@ -106,12 +106,10 @@ h2 {
 }
 
 #aboutMike {
-    /*float: left;*/
     margin-left: 79px;
 }
 
 #inOurWords {
-    /*float: left;*/
     margin-left: 79px;
 }
 
@@ -121,6 +119,41 @@ h2 {
     width: 193px;
     height: 3px;
     border: 2px solid #F8E71C;
+}
+
+#partialHome{
+  height: 863px;
+  width: 585px;
+}
+
+#partiaProfessionalBio{
+  padding-top: 205px;
+  height: 739px;
+  width: 585px;
+}
+
+#professionalBio{
+  position: 0 absolute;
+  text-align: justify;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+#partialInOurWords{
+  padding-top: 205px;
+  height: 739px;
+  width: 585px;
+}
+
+#doneeWords{
+  position: 0 absolute;
+  text-align: justify;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
 }
 
 h4, #tagline {

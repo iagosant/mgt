@@ -17,7 +17,7 @@ class DoneesController < ApplicationController
     #
     # donees = Donee.all
     # donees.each do |n|
-    #   n.name >> @donee_names
+    #   @donee_names << n.name
     # end
     # byebug
   end
