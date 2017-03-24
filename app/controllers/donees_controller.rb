@@ -13,6 +13,7 @@ class DoneesController < ApplicationController
     # Date.strptime('03-02-2001', '%d-%m-%Y')
     # byebug
     @donee = Donee.first
+    @donees = Donee.all
   end
 
   # GET /donees/new

@@ -80,16 +80,23 @@ body, .background {
   margin: 0 auto;
   width: 1440px;
   height: 1928px;
+  padding-left: 75px;
+}
+
+/*div, .uppersection{
+margin-left: 75px;
+margin-right: 780px;
+}*/
+
+.uppersection{
+  margin-right: 780px;
 }
 
 #background, img{
     float: right;
 }
 
-div, .uppersection{
-    margin-left: 75px;
-    margin-right: 780px;
-}
+
 
 h2, #websiteName{
     padding-top: 25px;
@@ -134,11 +141,45 @@ h3, #scholarship{
     letter-spacing: -1px;
 }
 
-video {
-    margin-top: 35px;
-    width: 585px;
-    height: 439px;
+video{
+    /*margin-top: 35px;*/
+    max-width: 585px;
+    max-height: 329.06px;
     object-fit: contain;
+}
+.video{
+  margin-top: 35px;
+  position: relative;
+  max-width: 585px;
+  max-height: 329.06px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7A7A7C;
+}
+
+.video:hover .overlay {
+  opacity: 0.75;
 }
 
 h3, #info{
@@ -151,7 +192,7 @@ h3, #info{
   color: #000000;
 }
 
-a, .button{
+.button{
   width: 264px;
   height: 64px;
   background-color: #F8E71C;
@@ -279,6 +320,7 @@ a, .button{
      margin-left: 75px;
      margin-right: 780px;
  }
+
  h2, #websiteName {
      padding-top: 70px;
      width: 202px;
@@ -400,3 +442,79 @@ a, .button{
    margin-left: 342px;
  }*//*/
 /*>>>>>>> 89d3273b446e598572036d2ec2ec09e27b2ca760*/
+/*** MENU *****/
+#primary_nav_wrap
+{
+	margin-top:15px
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a:first-child{
+  margin-left:0px;
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+  color: #7A7A7A;
+	text-decoration:none;
+	font-weight:700;
+  font-size: 20px;
+  /*line-height: 25px;*/
+	margin:0 70px;
+  font-family: "Helvetica Neue";
+  line-height: 40px;
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item > a
+{
+	border-bottom: 2px solid #F8E71C;
+}
+
+#primary_nav_wrap ul li:hover > a
+{
+	border-bottom: 2px solid #F8E71C;
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:120%;
+	padding:10px 15px
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
