@@ -1,34 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
 
-
-/*
-<<<<<<< HEAD*/
-
-
-/*@font-face{
-   font-family: 'ProximaNova-Light';
-   src:url('<%= asset_path("ProximaNova-Light.eot") %>');
-   src:url('<%= asset_path("ProximaNova-Light.eot")%>?#iefix') format('embedded-opentype'),
-   url('<%= asset_path("ProximaNova-Light.ttf") %>') format('truetype'),
-   url('<%= asset_path("ProximaNova-Light.woff") %>') format('woff'),
-   url('<%= asset_path("ProximaNova-Light.svg") %>#icofonts') format('svg');
-   font-weight: normal;
-   font-style: normal;
- }*/
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -38,9 +8,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
-
-
-/* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
@@ -163,7 +130,6 @@ h4, #tagline {
     font-size: 28px !important;
     line-height: 36px;
     color: #000000;
-    /*letter-spacing: -1px;*/
     padding-bottom: 10px;
 }
 
@@ -176,11 +142,9 @@ h3, #scholarship {
     font-weight: bold;
     line-height: 55px;
     color: #000000;
-    /*letter-spacing: 2px;*/
 }
 
 video {
-    /*margin-top: 35px;*/
     max-width: 585px;
     max-height: 329.06px;
     object-fit: contain;
@@ -221,35 +185,11 @@ video {
     opacity: 0.75;
 }
 
-
-/*
-#videowrap{
-    object-fit: contain;
-}*/
-
 .material-icons {
     font-size: 50px;
     color: #F8E71C
 }
 
-
-/*
-#videobox{
-  position: relative;
-}
-
-video, .volume-on{
-  /*opacity: 0.5;*/
-
-
-}
-
-/*div:hover #video_overlay{
-  position:absolute;
-  z-index:300000;
-  bottom:50%;
-  left:20%;
-}*/
 h3, #info {
     width: 521px;
     height: 42px;
@@ -274,9 +214,6 @@ a, .button {
     margin-top: 28px;
 }
 .lowersection {
-    /*width: 1440px;*/
-    /*margin-left: 75px;*/
-    /*margin-right: 780px;*/
     margin-top: 70px;
 }
 .blurb {
@@ -308,9 +245,7 @@ a, .button {
     line-height: 27px;
     color: #000000;
 }
-#donate {
-    /*margin-left: 560px;*/
-}
+
 .instructions {
   margin: 0 auto;
     width: 650px;
@@ -322,188 +257,4 @@ a, .button {
     line-height: 25px;
     color: #000000;
     margin-top: 25px;
-    /*margin-left: 342px;*/
 }
-
-/*======= THURSDAY PULL 3:11 pm*/
-
-/*@font-face{
-    font-family: 'ProximaNova-Light';
-    src:url('<%= asset_path("ProximaNova-Light.eot") %>');
-    src:url('<%= asset_path("ProximaNova-Light.eot")%>?#iefix') format('embedded-opentype'),
-    url('<%= asset_path("ProximaNova-Light.ttf") %>') format('truetype'),
-    url('<%= asset_path("ProximaNova-Light.woff") %>') format('woff'),
-    url('<%= asset_path("ProximaNova-Light.svg") %>#icofonts') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }*/
-
-/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font-size: 100%;
-     font: inherit;
-     vertical-align: baseline;
- }
- /* HTML5 display-role reset for older browsers */
-
-/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
-     display: block;
- }
- body{
-     line-height: 1;
- }
- ol, ul{
-     list-style: none;
- }
- blockquote, q{
-     quotes: none;
- }
- blockquote:before, blockquote:after, q:before, q:after{
-     content: '';
-     content: none;
- }
- table{
-     border-collapse: collapse;
-     border-spacing: 0;
- }
- /***********SANTIAGO's STYLE**********/
-
-/*html{
-     font-family: 'ProximaNova-Light'!important;
- }
- body, .background{
-     width: 1440px;
-     height: 1928px;
- }
- #background, img{
-     float: right;
- }
- div, .uppersection{
-     /*height: 1038px;
-     margin-left: 75px;
-     margin-right: 780px;
- }
- h2, #websiteName{
-     padding-top: 70px;
-     width: 202px;
-     height: 24px;
-     font-family: "Helvetica Neue";
-     font-size: 20px;
-     font-weight: bold;
-     line-height: 25px;
-     color: #7A7A7A;
- }
- hr, #webNameUnderline{
-     float: left;
-     box-sizing: border-box;
-     width: 193px;
-     height: 3px;
-     border: 2px solid #F8E71C;
- }
- h4, #tagline{
-     width: 585px;
-     height: 35px;
-     margin-top: 82px;
-     font-family: "Helvetica Neue";
-     font-size: 29px !important;
-     line-height: 36px;
-     color: #000000;
- }
- h3{
-     padding-top: 27px;
-     width: 600px;
-     height: 108px;
-     font-family: "Helvetica Neue";
-     font-size: 45px;
-     font-weight: bold;
-     line-height: 55px;
-     color: #000000;
- }
- video{
-     margin-top: 70px;
-     width: 585px;
-     height: 439px;
-     object-fit: contain;
-     background-color: #eee;
- }
- h3, #info{
-   width: 521px;
-   height: 42px;
-   font-family: "Helvetica Neue";
-   font-size: 35px;
-   font-weight: bold;
-   line-height: 43px;
-   color: #000000;
- }
- .button{
-   width: 264px;
-   height: 64px;
-   background-color: #F8E71C;
-   box-shadow: 0 2px 7px 0 rgba(102,122,142,0.4);
-   font-family: "Helvetica Neue";
-   font-size: 23px;
-   font-weight: bold;
-   text-align: center;
-   line-height: 28px;
-   color: #000000;
-   border: none;
-   margin-top: 28px;
- }
- .lowersection{
-   width: 1440px;
-   margin-left: 75px;
-   margin-right: 780px;
- }
- .blurb{
-   width: 1216px;
-   height: 222px;
-   font-family: "Helvetica Neue";
-   font-size: 25px;
-   font-style: italic;
-   text-align: center;
-   line-height: 37px;
-   color: #000000;
-   margin-top: 117px;
- }
- .donee{
-   text-align: center;
-   width: 1216px;
-   height: 222px;
-   font-family: "Helvetica Neue";
-   font-size: 25px;
-   font-style: italic;
-   text-align: center;
-   line-height: 37px;
-   color: #000000;
-   margin-top: -35px;
- }
- .language{
-   width: 1023px;
-   height: 162px;
-   font-family: "Helvetica Neue";
-   font-size: 20px;
-   text-align: center;
-   line-height: 27px;
-   color: #000000;
-   margin-left: 180px;
-   margin-top: -100px;
- }
- #donate{
-   margin-left: 560px;
- }
- .instructions{
-   width: 650px;
-   height: 72px;
-   font-family: "Helvetica Neue";
-   font-size: 20px;
-   font-weight: 500;
-   text-align: center;
-   line-height: 25px;
-   color: #000000;
-   margin-top: 25px;
-   margin-left: 342px;
- }*/
-/*/
-/*>>>>>>> 89d3273b446e598572036d2ec2ec09e27b2ca760*/
