@@ -1,0 +1,13 @@
+<nav id="primary_nav_wrap">
+<ul>
+  <li><%= link_to 'TO MIKE, FROM US' , root_path %></li>
+  <li><%= link_to 'ABOUT MIKE' , about_path %></li>
+  <li><%= link_to 'OUR WORDS' , inourwords_path %>
+    <% if !@donees.empty? %>
+      <ul>
+        <%= render partial: "layouts/top_menu_li", collection: @donees, as: :donee %>
+      </ul>
+    <% end %>
+  </li>
+</ul>
+</nav>

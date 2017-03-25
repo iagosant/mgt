@@ -4,7 +4,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -14,7 +13,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-    line-height: 1;
+    font-family: "Helvetica Neue";
 }
 
 ol, ul {
@@ -38,23 +37,44 @@ table {
 
 /***********SANTIAGO's STYLE**********/
 
-html {
-    font-family: 'ProximaNova-Light'!important;
-}
-
 .container {
     margin: 0 auto;
-    width: 1365px;
-    height: 1928px;
-    padding-left: 75px;
+    max-width: 1438px;
 }
 
-#background, img {
+.uppersection{
+  min-height: 1038px;
+}
+
+.uppersection .left{
+  padding: 50px 70px 0px;
+  max-width: 605px;
+}
+
+.uppersection .left,
+.uppersection .right{
+  display: inline-block;
+  float: left;
+}
+
+.uppersection header{
+  margin-bottom: 72px;
+}
+
+.uppersection header,
+.uppersection header nav{
+  min-height: 53px;
+}
+
+.container .lowersection {
+  padding: 78px 105px 0px 104px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+#background, img{
     float: right;
-}
-
-.uppersection {
-  height: 1038px;
 }
 
 div .menu {
@@ -123,31 +143,73 @@ h2 {
   color: #000000;
 }
 
-h4, #tagline {
-    width: 585px;
+h3, h4{
+  font-family: "Helvetica Neue";
+  color: #000000;
+}
+
+h4#tagline {
     margin-top: 81px;
-    font-family: "Helvetica Neue";
     font-size: 28px !important;
     line-height: 36px;
-    color: #000000;
     padding-bottom: 10px;
 }
 
-h3, #scholarship {
+h3#scholarship {
     padding-top: 45px;
-    width: 585px;
-    height: 108px;
-    font-family: "Helvetica Neue";
     font-size: 43px;
     font-weight: bold;
     line-height: 55px;
-    color: #000000;
+
 }
 
-video {
+h3.info {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 69px 0 28px 0;
+}
+
+video{
+    /*margin-top: 35px;*/
     max-width: 585px;
     max-height: 329.06px;
     object-fit: contain;
+}
+
+.video{
+  margin-top: 35px;
+  position: relative;
+  max-width: 585px;
+  max-height: 329.06px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7A7A7C;
+}
+
+.video:hover .overlay {
+  opacity: 0.75;
 }
 
 .video {
@@ -157,15 +219,20 @@ video {
     max-height: 329.06px;
 }
 
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.button {
+    width: 264px;
+    height: 64px;
+    background-color: #F8E71C;
+    box-shadow: 0 2px 7px 0 rgba(102, 122, 142, 0.4);
+    font-family: "Helvetica Neue";
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    color: #000000;
+    border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .overlay {
@@ -190,32 +257,27 @@ video {
     color: #F8E71C
 }
 
-h3, #info {
-    width: 521px;
-    height: 42px;
-    font-family: "Helvetica Neue";
-    font-size: 35px;
-    font-weight: bold;
-    line-height: 43px;
-    color: #000000;
+.uppercase{
+  text-transform: uppercase;
 }
-a, .button {
-    width: 264px;
-    height: 64px;
-    background-color: #F8E71C;
-    box-shadow: 0 2px 7px 0 rgba(102, 122, 142, 0.4);
-    font-family: "Helvetica Neue";
-    font-size: 23px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 28px;
-    color: #000000;
-    border: none;
-    margin-top: 28px;
+/*
+#videobox{
+  position: relative;
 }
-.lowersection {
-    margin-top: 70px;
+
+video, .volume-on{
+  /*opacity: 0.5;*/
+
+
 }
+
+/*div:hover #video_overlay{
+  position:absolute;
+  z-index:300000;
+  bottom:50%;
+  left:20%;
+}*/
+
 .blurb {
     width: 1216px;
     font-family: "Helvetica Neue";
@@ -224,11 +286,10 @@ a, .button {
     text-align: center;
     line-height: 37px;
     color: #000000;
-    margin-top: 117px;
+    /*margin-top: 117px;*/
 }
 .donee {
     text-align: center;
-    width: 1216px;
     font-family: "Helvetica Neue";
     font-size: 25px;
     font-style: italic;
@@ -237,24 +298,279 @@ a, .button {
     color: #000000;
 }
 .language {
-  margin: 0 auto;
-    width: 76%;
-    font-family: "Helvetica Neue";
     font-size: 20px;
     text-align: center;
     line-height: 27px;
     color: #000000;
+    margin-bottom: 40px;
 }
 
 .instructions {
-  margin: 0 auto;
-    width: 650px;
-    height: 72px;
-    font-family: "Helvetica Neue";
-    font-size: 20px;
+    margin: 0 auto;
+    width: 716px;
+    font-size: 18px;
     font-weight: 500;
     text-align: center;
-    line-height: 25px;
-    color: #000000;
-    margin-top: 25px;
+    line-height: 23px;
+    padding: 40px 100px 119px;
+
+}
+
+/*======= THURSDAY PULL 3:11 pm*/
+
+/*@font-face{
+    font-family: 'ProximaNova-Light';
+    src:url('<%= asset_path("ProximaNova-Light.eot") %>');
+    src:url('<%= asset_path("ProximaNova-Light.eot")%>?#iefix') format('embedded-opentype'),
+    url('<%= asset_path("ProximaNova-Light.ttf") %>') format('truetype'),
+    url('<%= asset_path("ProximaNova-Light.woff") %>') format('woff'),
+    url('<%= asset_path("ProximaNova-Light.svg") %>#icofonts') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }*/
+
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+
+/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+     display: block;
+ }
+ body{
+     line-height: 1;
+ }
+ ol, ul{
+     list-style: none;
+ }
+ blockquote, q{
+     quotes: none;
+ }
+ blockquote:before, blockquote:after, q:before, q:after{
+     content: '';
+     content: none;
+ }
+ table{
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ /***********SANTIAGO's STYLE**********/
+
+/*html{
+     font-family: 'ProximaNova-Light'!important;
+ }
+ body, .background{
+     width: 1440px;
+     height: 1928px;
+ }
+ #background, img{
+     float: right;
+ }
+ div, .uppersection{
+     /*height: 1038px;
+     margin-left: 75px;
+     margin-right: 780px;
+ }
+<<<<<<< HEAD
+
+ h2, #websiteName {
+=======
+ h2, #websiteName{
+>>>>>>> ffcef37df95ade54b313fccc5ab9794d3144cf16
+     padding-top: 70px;
+     width: 202px;
+     height: 24px;
+     font-family: "Helvetica Neue";
+     font-size: 20px;
+     font-weight: bold;
+     line-height: 25px;
+     color: #7A7A7A;
+ }
+ hr, #webNameUnderline{
+     float: left;
+     box-sizing: border-box;
+     width: 193px;
+     height: 3px;
+     border: 2px solid #F8E71C;
+ }
+ h4, #tagline{
+     width: 585px;
+     height: 35px;
+     margin-top: 82px;
+     font-family: "Helvetica Neue";
+     font-size: 29px !important;
+     line-height: 36px;
+     color: #000000;
+ }
+ h3{
+     padding-top: 27px;
+     width: 600px;
+     height: 108px;
+     font-family: "Helvetica Neue";
+     font-size: 45px;
+     font-weight: bold;
+     line-height: 55px;
+     color: #000000;
+ }
+ video{
+     margin-top: 70px;
+     width: 585px;
+     height: 439px;
+     object-fit: contain;
+     background-color: #eee;
+ }
+ h3, #info{
+   width: 521px;
+   height: 42px;
+   font-family: "Helvetica Neue";
+   font-size: 35px;
+   font-weight: bold;
+   line-height: 43px;
+   color: #000000;
+ }
+ .button{
+   width: 264px;
+   height: 64px;
+   background-color: #F8E71C;
+   box-shadow: 0 2px 7px 0 rgba(102,122,142,0.4);
+   font-family: "Helvetica Neue";
+   font-size: 23px;
+   font-weight: bold;
+   text-align: center;
+   line-height: 28px;
+   color: #000000;
+   border: none;
+   margin-top: 28px;
+ }
+ .lowersection{
+   width: 1440px;
+   margin-left: 75px;
+   margin-right: 780px;
+ }
+ .blurb{
+   width: 1216px;
+   height: 222px;
+   font-family: "Helvetica Neue";
+   font-size: 25px;
+   font-style: italic;
+   text-align: center;
+   line-height: 37px;
+   color: #000000;
+   margin-top: 117px;
+ }
+ .donee{
+   text-align: center;
+   width: 1216px;
+   height: 222px;
+   font-family: "Helvetica Neue";
+   font-size: 25px;
+   font-style: italic;
+   text-align: center;
+   line-height: 37px;
+   color: #000000;
+   margin-top: -35px;
+ }
+ .language{
+   width: 1023px;
+   height: 162px;
+   font-family: "Helvetica Neue";
+   font-size: 20px;
+   text-align: center;
+   line-height: 27px;
+   color: #000000;
+   margin-left: 180px;
+   margin-top: -100px;
+ }
+ #donate{
+   margin-left: 560px;
+ }
+ .instructions{
+   width: 650px;
+   height: 72px;
+   font-family: "Helvetica Neue";
+   font-size: 20px;
+   font-weight: 500;
+   text-align: center;
+   line-height: 25px;
+   color: #000000;
+   margin-top: 25px;
+   margin-left: 342px;
+ }*/
+/*/
+/*>>>>>>> 89d3273b446e598572036d2ec2ec09e27b2ca760*/
+/*** MENU *****/
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul li:first-child a{
+  margin-left:0px;
+}
+
+#primary_nav_wrap ul li:last-child a{
+  margin-right:0px;
+}
+
+#primary_nav_wrap > ul a{
+	display:block;
+  color: #7A7A7A;
+	text-decoration:none;
+	font-weight:500;
+  font-size: 20px;
+	margin:0 34px;
+  font-family: "Helvetica Neue";
+  line-height: 50px;
+}
+
+#primary_nav_wrap ul li{
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap > ul li.current-menu-item > a{
+	border-bottom: 3px solid #F8E71C;
+}
+
+#primary_nav_wrap ul li:active > a{
+	border-bottom: 3px solid #F8E71C;
+}
+
+#primary_nav_wrap ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:34px;
+	background:#F8E71C;
+	padding: 5px 11px 10px;
+}
+
+#primary_nav_wrap ul ul li{
+	float:none;
+	width:108px;
+  padding: 5px 0;
+}
+
+#primary_nav_wrap ul ul a{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  margin-left: 0;
+}
+
+#primary_nav_wrap ul li:hover > ul{
+	display:block
+
 }
