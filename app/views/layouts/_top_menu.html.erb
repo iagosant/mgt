@@ -1,8 +1,8 @@
 <nav id="primary_nav_wrap">
 <ul>
-  <li class="current-menu-item"><a href="#">TO MIKE, FROM US</a></li>
-  <li><a href="#">ABOUT MIKE</a></li>
-  <li><a href="#">OUR WORDS</a>
+  <li><%= link_to 'TO MIKE, FROM US' , root_path %></li>
+  <li><%= link_to 'ABOUT MIKE' , about_path %></li>
+  <li><%= link_to 'OUR WORDS' , inourwords_path %>
     <% if !@donees.empty? %>
       <ul>
         <%= render partial: "layouts/top_menu_li", collection: @donees, as: :donee %>
