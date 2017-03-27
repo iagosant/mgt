@@ -60,21 +60,21 @@ table {
   /*min-height: 1038px;*/
 }
 
-.section {
-  padding-bottom: 78px;
+section {
+  /*padding-bottom: 78px;*/
 }
 
-.section .left {
+section.left {
   padding: 50px 4.9% 0px;
   width: 42%;
   /*max-width: 605px;*/
 }
 
-.section .right {
+aside.right {
   width: 48.2%;
 }
-.section .left,
-.section .right{
+section.left,
+aside.right{
   display: inline-block;
   float: left;
 }
@@ -83,8 +83,8 @@ table {
   margin-bottom: 72px;
 }
 
-.section header,
-.section header nav{
+section header,
+section header nav{
   min-height: 53px;
 }
 
@@ -541,15 +541,16 @@ video, .volume-on{
 	position:relative;
 	float:left;
 	margin:0;
-	padding:0
+	padding:0;
+  width: 100%;
 }
 
-#primary_nav_wrap ul li:first-child a{
-  margin-left:0px;
+#primary_nav_wrap ul li:first-child{
+  padding-left:0px;
 }
 
-#primary_nav_wrap ul li:last-child a{
-  margin-right:0px;
+#primary_nav_wrap ul li:last-child{
+  padding-right:0px;
 }
 
 #primary_nav_wrap > ul a{
@@ -558,16 +559,17 @@ video, .volume-on{
 	text-decoration:none;
 	font-weight:500;
   font-size: 20px;
-	margin:0 34px;
+	/*margin:0 34px;*/
   font-family: "Helvetica Neue";
   line-height: 50px;
 }
 
 #primary_nav_wrap ul li{
 	position:relative;
+  display: inline-block;
 	float:left;
 	margin:0;
-	padding:0
+	padding: 0 4%;
 }
 
 #primary_nav_wrap ul li a:hover:not(.active) {
@@ -578,6 +580,9 @@ video, .volume-on{
     border-bottom: 5px solid #F8E71C;
 }
 
+#primary_nav_wrap ul ul li a.active {
+    border: none;
+}
 /*a.active {
     border-bottom: 5px solid #F8E71C;
 }*/
@@ -593,7 +598,7 @@ video, .volume-on{
 	display:none;
 	position:absolute;
 	top:100%;
-	left:34px;
+	/*left:34px;*/
 	background:#F8E71C;
 	padding: 5px 11px 10px;
   margin-top: -5px;
@@ -615,4 +620,61 @@ video, .volume-on{
 #primary_nav_wrap ul li:hover > ul{
 	display:block
 
+}
+
+/** Media Queries **/
+@media all and (max-width: 420px) {
+  section.left, aside.right {
+    float: none;
+    width: auto;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1400px) {
+  #primary_nav_wrap > ul a {
+    font-size: 16px;
+  }
+  section.left {
+    padding: 20px 3% 0px;
+  }
+  h4#tagline {
+    margin-top: 55px;
+    font-size: 16px !important;
+    line-height: 18px;
+  }
+  h3#scholarship {
+    padding-top: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 33px;
+}
+h3.info {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 39px 0 28px 0;
+}
+.content p, #doneeWords {
+    font-size: 14px;
+    line-height: 23px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.content{
+  padding-top: 30px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .content p, #doneeWords {
+      font-size: 14px;
+      line-height: 23px;
+      padding-bottom: 20px;
+      text-align: left;
+  }
+
+  section.left {
+    padding: 20px 3% 0px;
+  }
 }

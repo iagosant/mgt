@@ -37,4 +37,18 @@ $(document).on('turbolinks:load',function(){
     //     $(this).addClass("active");
     // })
 
+    /** Do it for window load ***/
+    $(window).resize(function(){
+        // alert($('aside.right').height());
+        var size = $('aside.right').height() - 93;
+        size = size + 'px';
+        if ($('.container').width() <= 1020 ){
+
+                  $('.content').css('height', size ) ;
+                  $('.content').css('overflow','scroll');
+                  $('.content').css('padding-left','10px');
+
+           }
+
+    });
 });
