@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('turbolinks:load',function(){
 
     // $( ".video" ).hover(function() {
     //     var volume = $("video").prop('muted');
@@ -29,5 +29,12 @@ $(document).ready(function() {
         $("i.volume",$this).html('volume_up');
       };
     });
+
+    // $('#primary_nav_wrap ul li a').click(function(){
+    //   alert('innnn');
+    //     var $menuLink = $('#primary_nav_wrap a');
+    //     $menuLink.removeClass("active");
+    //     $(this).addClass("active");
+    // })
 
 });
