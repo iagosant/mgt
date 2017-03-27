@@ -1,6 +1,15 @@
-
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt,
+var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -36,37 +45,50 @@ table {
 
 
 /***********SANTIAGO's STYLE**********/
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+  clear: both;
+}
 
-.container {
+.wrapper {
     margin: 0 auto;
     max-width: 1438px;
 }
 
-.uppersection{
-  min-height: 1038px;
+.uppersection {
+  /*min-height: 1038px;*/
 }
 
-.uppersection .left{
-  padding: 50px 70px 0px;
-  max-width: 605px;
+.section {
+  padding-bottom: 78px;
 }
 
-.uppersection .left,
-.uppersection .right{
+.section .left {
+  padding: 50px 4.9% 0px;
+  width: 42%;
+  /*max-width: 605px;*/
+}
+
+.section .right {
+  width: 48.2%;
+}
+.section .left,
+.section .right{
   display: inline-block;
   float: left;
 }
 
-.uppersection header{
+.section header{
   margin-bottom: 72px;
 }
 
-.uppersection header,
-.uppersection header nav{
+.section header,
+.section header nav{
   min-height: 53px;
 }
 
-.container .lowersection {
+.lowersection {
   padding: 78px 105px 0px 104px;
   text-align: center;
   font-size: 24px;
@@ -90,6 +112,12 @@ h2 {
     line-height: 25px;
     color: #7A7A7A;
     float: left;
+}
+
+.content {
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 30px;
 }
 
 #aboutMike {
@@ -129,9 +157,15 @@ h2 {
 }
 
 #partialInOurWords{
-  padding-top: 205px;
+  /*padding-top: 205px;
   height: 739px;
-  width: 585px;
+  width: 585px;*/
+  position: 0 absolute;
+  text-align: justify;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
 }
 
 #doneeWords{
@@ -171,9 +205,7 @@ h3.info {
 }
 
 video{
-    max-width: 585px;
-    max-height: 329.06px;
-    object-fit: contain;
+    width: 100%;
 }
 
 .video{
@@ -260,16 +292,18 @@ video{
   text-transform: uppercase;
 }
 
-.blurb {
-    width: 1216px;
+/*.blurb {
     font-family: "Helvetica Neue";
     font-size: 25px;
-    font-style: italic;
-    text-align: center;
+    text-align: left;
     line-height: 37px;
     color: #000000;
-    /*margin-top: 117px;*/
 }
+
+.blurb p {
+  font-style: italic;
+}*/
+
 .donee {
     text-align: center;
     font-family: "Helvetica Neue";
@@ -289,7 +323,6 @@ video{
 
 .instructions {
     margin: 0 auto;
-    width: 716px;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
@@ -297,8 +330,7 @@ video{
     padding: 40px 100px 119px;
 }
 
-#primary_nav_wrap ul
-{
+#primary_nav_wrap ul{
 	list-style:none;
 	position:relative;
 	float:left;
@@ -332,12 +364,12 @@ video{
 	padding:0
 }
 
-#primary_nav_wrap > ul li.current-menu-item > a{
-	border-bottom: 3px solid #F8E71C;
+#primary_nav_wrap ul li a:hover:not(.active) {
+    border: none;
 }
 
-#primary_nav_wrap ul li:active > a{
-	border-bottom: 3px solid #F8E71C;
+#primary_nav_wrap ul li a.active {
+    border-bottom: 5px solid #F8E71C;
 }
 
 #primary_nav_wrap ul ul{
@@ -347,6 +379,7 @@ video{
 	left:34px;
 	background:#F8E71C;
 	padding: 5px 11px 10px;
+  margin-top: -5px;
 }
 
 #primary_nav_wrap ul ul li{
@@ -364,5 +397,4 @@ video{
 
 #primary_nav_wrap ul li:hover > ul{
 	display:block
-
 }
