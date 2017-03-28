@@ -11,21 +11,19 @@
   <body>
     <div class="container">
      <div class="wrapper">
-        <div class="section">
-            <div class="left">
-                <header id="header" class="page-topbar">
-                    <%= render 'layouts/top_menu' %>
-                </header>
-                <div class="content">
-                  <%= yield %>
-                </div>
-            </div>
-            <div class="right">
-                <figure id="background">
-                    <%= image_tag("mike_@lovett-productions.jpg", width:'100%', height: '100%') %>
-                </figure>
-            </div>
-        </div>
+          <section class="left">
+              <header id="header" class="page-topbar">
+                  <%= render 'layouts/top_menu' %>
+              </header>
+              <div class="content">
+                <%= yield %>
+              </div>
+          </section>
+          <aside class="right">
+              <figure id="background">
+                  <%= image_tag("mike_@lovett-productions.jpg", width:'100%', height: '100%') %>
+              </figure>
+          </aside>
         <div class="clearfix"></div>
         <div class="lowersection">
             <!-- LOWER SECTION DIV -->
