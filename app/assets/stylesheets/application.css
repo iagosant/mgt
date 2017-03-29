@@ -114,10 +114,16 @@ h2 {
     float: left;
 }
 
+
 .content {
   font-size: 18px;
   line-height: 32px;
   padding-bottom: 30px;
+  /*VIDEO OFF WHEN THIS IS ON*/
+  /*overflow: auto;
+  height: 882px;
+  text-align: justify;*/
+    /*VIDEO OFF WHEN THIS IS ON*/
 }
 
 #aboutMike {
