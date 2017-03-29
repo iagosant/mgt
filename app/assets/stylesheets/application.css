@@ -119,12 +119,25 @@ h2 {
   font-size: 18px;
   line-height: 32px;
   padding-bottom: 30px;
+  padding-top: 71px;
   /*VIDEO OFF WHEN THIS IS ON*/
   /*overflow: auto;
   height: 882px;
   text-align: justify;*/
     /*VIDEO OFF WHEN THIS IS ON*/
 }
+
+.scroll{
+/*font-size: 18px;
+line-height: 32px;
+padding-bottom: 30px;*/
+/*VIDEO OFF WHEN THIS IS ON*/
+overflow: auto;
+height: 744px;
+text-align: justify;
+  /*VIDEO OFF WHEN THIS IS ON*/
+}
+
 
 #aboutMike {
     margin-left: 79px;
@@ -189,7 +202,6 @@ h3, h4{
 }
 
 h4#tagline {
-    margin-top: 81px;
     font-size: 28px !important;
     line-height: 36px;
     padding-bottom: 10px;
@@ -256,9 +268,10 @@ video{
     max-height: 329.06px;
 }
 
-.button {
+button.button {
     width: 264px;
     height: 64px;
+    margin-top: 28px;
     background-color: #F8E71C;
     box-shadow: 0 2px 7px 0 rgba(102, 122, 142, 0.4);
     font-family: "Helvetica Neue";
@@ -270,6 +283,11 @@ video{
     border: none;
     cursor: pointer;
     text-decoration: none;
+}
+
+a{
+    color: black;
+    text-decoration: none !important;
 }
 
 .overlay {
@@ -441,7 +459,7 @@ h3.info {
     font-size: 25px;
     font-weight: bold;
     line-height: 40px;
-    padding: 39px 0 28px 0;
+    padding: 39px 0 0px 0;
 }
 .content p, #doneeWords {
     font-size: 14px;
