@@ -4,7 +4,6 @@ class DoneesController < ApplicationController
   # GET /donees
   # GET /donees.json
   def index
-
   end
 
   # GET /donees/1
@@ -22,7 +21,6 @@ class DoneesController < ApplicationController
     #   @donee_names << n.name
     # end
     # byebug
-
   end
 
   # GET /donees/new
@@ -82,7 +80,6 @@ class DoneesController < ApplicationController
 
     # Use callbacks to share common setup or constraints between actions.
     def set_donee
-      # byebug
       @donee = Donee.find(params[:id])
     end
 end
