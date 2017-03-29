@@ -1,0 +1,487 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt,
+var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    font-family: "Helvetica Neue";
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/***********SANTIAGO's STYLE**********/
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+  clear: both;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1438px;
+}
+
+.uppersection {
+  /*min-height: 1038px;*/
+}
+
+section {
+  /*padding-bottom: 78px;*/
+}
+
+section.left {
+  padding: 50px 4.9% 0px;
+  width: 42%;
+  /*max-width: 605px;*/
+}
+
+aside.right {
+  width: 48.2%;
+}
+section.left,
+aside.right{
+  display: inline-block;
+  float: left;
+}
+
+.section header{
+  margin-bottom: 72px;
+}
+
+section header,
+section header nav{
+  min-height: 53px;
+}
+
+.lowersection {
+  padding: 78px 105px 0px 104px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+#background, img{
+    float: right;
+}
+
+div .menu {
+    padding-top: 70px;
+    width: 585px;
+    height: 24px;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    line-height: 25px;
+    color: #7A7A7A;
+    float: left;
+}
+
+
+.content {
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 30px;
+  padding-top: 71px;
+  /*VIDEO OFF WHEN THIS IS ON*/
+  /*overflow: auto;
+  height: 882px;
+  text-align: justify;*/
+    /*VIDEO OFF WHEN THIS IS ON*/
+}
+
+.scroll{
+/*font-size: 18px;
+line-height: 32px;
+padding-bottom: 30px;*/
+/*VIDEO OFF WHEN THIS IS ON*/
+overflow: auto;
+height: 744px;
+text-align: justify;
+  /*VIDEO OFF WHEN THIS IS ON*/
+}
+
+
+#aboutMike {
+    margin-left: 79px;
+}
+
+#inOurWords {
+    margin-left: 79px;
+}
+
+#webNameUnderline {
+    float: left;
+    box-sizing: border-box;
+    width: 193px;
+    height: 3px;
+    border: 2px solid #F8E71C;
+}
+
+#partialHome{
+  height: 863px;
+  width: 585px;
+}
+
+#partiaProfessionalBio{
+  padding-top: 205px;
+  height: 739px;
+  width: 585px;
+}
+
+#professionalBio{
+  position: 0 absolute;
+  text-align: justify;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+#partialInOurWords{
+  /*padding-top: 205px;
+  height: 739px;
+  width: 585px;*/
+  position: 0 absolute;
+  text-align: justify;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+#doneeWords{
+  position: 0 absolute;
+  text-align: justify;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+h3, h4{
+  font-family: "Helvetica Neue";
+  color: #000000;
+}
+
+h4#tagline {
+    font-size: 28px !important;
+    line-height: 36px;
+    padding-bottom: 10px;
+}
+
+h3#scholarship {
+    padding-top: 45px;
+    font-size: 43px;
+    font-weight: bold;
+    line-height: 55px;
+
+}
+
+h3.info {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 69px 0 28px 0;
+}
+
+video{
+    width: 100%;
+}
+
+.video{
+  margin-top: 35px;
+  position: relative;
+  max-width: 585px;
+  max-height: 329.06px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #7A7A7C;
+}
+
+.video:hover .overlay {
+  opacity: 0.75;
+}
+
+.video {
+    margin-top: 35px;
+    position: relative;
+    max-width: 585px;
+    max-height: 329.06px;
+}
+
+button.button {
+    width: 264px;
+    height: 64px;
+    margin-top: 28px;
+    background-color: #F8E71C;
+    box-shadow: 0 2px 7px 0 rgba(102, 122, 142, 0.4);
+    font-family: "Helvetica Neue";
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    text-decoration: none !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7A7A7C;
+}
+
+.video:hover .overlay {
+    opacity: 0.75;
+}
+
+.material-icons {
+    font-size: 50px;
+    color: #F8E71C
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+/*.blurb {
+    font-family: "Helvetica Neue";
+    font-size: 25px;
+    text-align: left;
+    line-height: 37px;
+    color: #000000;
+}
+
+.blurb p {
+  font-style: italic;
+}*/
+
+.donee {
+    text-align: center;
+    font-family: "Helvetica Neue";
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    line-height: 37px;
+    color: #000000;
+}
+.language {
+    font-size: 20px;
+    text-align: center;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.instructions {
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 23px;
+    padding: 40px 100px 119px;
+}
+
+#primary_nav_wrap ul{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+  width: 100%;
+}
+
+#primary_nav_wrap ul li:first-child{
+  padding-left:0px;
+}
+
+#primary_nav_wrap ul li:last-child{
+  padding-right:0px;
+}
+
+#primary_nav_wrap > ul a{
+	display:block;
+  color: #7A7A7A;
+	text-decoration:none;
+	font-weight:500;
+  font-size: 20px;
+	/*margin:0 34px;*/
+  font-family: "Helvetica Neue";
+  line-height: 50px;
+}
+
+#primary_nav_wrap ul li{
+	position:relative;
+  display: inline-block;
+	float:left;
+	margin:0;
+	padding: 0 4%;
+}
+
+#primary_nav_wrap ul li a:hover:not(.active) {
+    border: none;
+}
+
+#primary_nav_wrap ul li a.active {
+    border-bottom: 5px solid #F8E71C;
+}
+
+/*#primary_nav_wrap ul ul li a.active {
+    border: none;
+}*/
+
+#primary_nav_wrap ul ul{
+	display:none;
+	position:absolute;
+	top:100%;
+	/*left:34px;*/
+	background:#F8E71C;
+	padding: 5px 11px 10px;
+  margin-top: -5px;
+}
+
+#primary_nav_wrap ul ul li{
+	float:none;
+	width:108px;
+  padding: 5px 0;
+}
+
+#primary_nav_wrap ul ul a{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  margin-left: 0;
+}
+
+#primary_nav_wrap ul li:hover > ul{
+	display:block
+}
+
+/** Media Queries **/
+@media all and (max-width: 420px) {
+  section.left, aside.right {
+    float: none;
+    width: auto;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1400px) {
+  #primary_nav_wrap > ul a {
+    font-size: 16px;
+  }
+  section.left {
+    padding: 20px 3% 0px;
+  }
+  h4#tagline {
+    margin-top: 55px;
+    font-size: 16px !important;
+    line-height: 18px;
+  }
+  h3#scholarship {
+    padding-top: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 33px;
+}
+h3.info {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 39px 0 0px 0;
+}
+.content p, #doneeWords {
+    font-size: 14px;
+    line-height: 23px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.content{
+  padding-top: 30px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .content p, #doneeWords {
+      font-size: 14px;
+      line-height: 23px;
+      padding-bottom: 20px;
+      text-align: left;
+  }
+
+  section.left {
+    padding: 20px 3% 0px;
+  }
+}
