@@ -14,15 +14,16 @@ $(document).on('turbolinks:load',function(){
     // // }
     // );
 
-
     $("#video_overlay .text").click(function(){
       var $this = $(this);
       var $container = $(".video");
       var volume = $("video",$container).prop('muted'); // alert("The paragraph was clicked.");
       // alert(volume)
+
       if (volume) {
         $("video").prop('muted', false);
         $("i.volume",$this).html('volume_off');
+
       }
       else {
         $("video").prop('muted', true);
@@ -36,6 +37,7 @@ $(document).on('turbolinks:load',function(){
     //     $menuLink.removeClass("active");
     //     $(this).addClass("active");
     // })
+
 
     /** Do it for window load ***/
     $(window).resize(function(){
