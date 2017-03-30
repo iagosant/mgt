@@ -138,13 +138,8 @@ text-align: justify;
   /*VIDEO OFF WHEN THIS IS ON*/
 }
 
-
 #aboutMike {
-    margin-left: 79px;
-}
-
-#inOurWords {
-    margin-left: 79px;
+    text-align: justify;
 }
 
 #webNameUnderline {
