@@ -21,13 +21,13 @@ $(document).on('turbolinks:load',function(){
       // alert(volume)
 
       if (volume) {
-        $("video").prop('muted', false);
-        $("i.volume",$this).html('volume_off');
+      //  $("video").prop('muted', false);
+      //  $("i.volume",$this).html('volume_off');
 
       }
       else {
-        $("video").prop('muted', true);
-        $("i.volume",$this).html('volume_up');
+        //$("video").prop('muted', true);
+      //  $("i.volume",$this).html('volume_up');
       };
     });
 
