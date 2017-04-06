@@ -1,3 +1,12 @@
+$(document).on('turbolinks:beforeunload',function(){
+  var pathname = window.location.pathname;
+    if (pathname != '/'){
+       //alert('entro');
+    }
+   return 'Are you sure you want to leave?';
+ });
+
+
 $(document).on('turbolinks:load',function(){
 
     // $( ".video" ).hover(function() {
@@ -13,30 +22,29 @@ $(document).on('turbolinks:load',function(){
     //     // }
     // // }
     // );
+    var video = document.getElementById("idvideo");
+
+     function stopVideo(){
+          video.pause();
+          video.currentTime = 0;
+     }
+
+
 
     $("#video_overlay .text").click(function(){
       var $this = $(this);
       var $container = $(".video");
-      var volume = $("video",$container).prop('muted'); // alert("The paragraph was clicked.");
-      // alert(volume)
+      var volume = video.muted; // alert("The paragraph was clicked.");
 
       if (volume) {
-      //  $("video").prop('muted', false);
-      //  $("i.volume",$this).html('volume_off');
-
+        video.muted = false;
+        $("i.volume",$this).html('volume_off');
       }
       else {
-        //$("video").prop('muted', true);
-      //  $("i.volume",$this).html('volume_up');
+        video.muted = true;
+        $("i.volume",$this).html('volume_up');
       };
     });
-
-    // $('#primary_nav_wrap ul li a').click(function(){
-    //   alert('innnn');
-    //     var $menuLink = $('#primary_nav_wrap a');
-    //     $menuLink.removeClass("active");
-    //     $(this).addClass("active");
-    // })
 
 
     /** Do it for window load ***/
