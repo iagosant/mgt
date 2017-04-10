@@ -332,6 +332,24 @@ a{
     line-height: 37px;
     color: #000000;
 }
+
+.quote{
+  font-size: 30px;
+  text-align: center;
+  line-height: 27px;
+  /*font-weight: bold;*/
+  color: #000000;
+}
+
+.lincoln {
+  font-family: "Helvetica Neue";
+  font-size: 25px;
+  font-style: italic;
+  text-align: center;
+  line-height: 60px;
+  color: #000000;
+}
+
 .language {
     font-size: 20px;
     text-align: center;
