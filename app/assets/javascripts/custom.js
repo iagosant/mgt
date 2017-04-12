@@ -1,40 +1,27 @@
-$(document).on('turbolinks:beforeunload',function(){
-  var pathname = window.location.pathname;
-    if (pathname != '/'){
-       //alert('entro');
-    }
-   return 'Are you sure you want to leave?';
- });
 
+
+// var dispatchUnloadEvent = function() {
+//   var event = document.createEvent("Events");
+//   var v = document.getElementById("idvideo");
+//   alert(v.src);
+//   v.pause();
+//   v.src = "";
+// }
+
+//addEventListener("beforeunload", dispatchUnloadEvent);
+///addEventListener("turbolinks:before-render", dispatchUnloadEvent);
 
 $(document).on('turbolinks:load',function(){
-
-    // $( ".video" ).hover(function() {
-    //     var volume = $("video").prop('muted');
-    //     // alert(volume) //EL ALERT SI FUNCIONA
-    //    if (volume){ //AQUÍ ES DONDE COMIENZAN LOS PROBLEMAS
-    //     $( "#video_overlay .text" ).append( '<i class="volume-on material-icons" font-size="50px">volume_on</i>');
-    //   }else {
-    //     $( "#video_overlay .text" ).append( '<i class="volume-on material-icons" font-size="50px">volume_off</i>');
-    //   }}
-    //     // , function(){
-    //     //   $( "#video_overlay" ).empty();
-    //     // }
-    // // }
-    // );
+    var pathname = window.location.pathname;
     var video = document.getElementById("idvideo");
 
-     function stopVideo(){
-          video.pause();
-          video.currentTime = 0;
-     }
-
-
-
+    if (pathname == "/"){
+      video.play();
+    }
     $("#video_overlay .text").click(function(){
       var $this = $(this);
       var $container = $(".video");
-      var volume = video.muted; // alert("The paragraph was clicked.");
+      var volume = video.muted;
 
       if (volume) {
         video.muted = false;
@@ -43,9 +30,8 @@ $(document).on('turbolinks:load',function(){
       else {
         video.muted = true;
         $("i.volume",$this).html('volume_up');
-      };
+      }
     });
-
 
     /** Do it for window load ***/
     $(window).resize(function(){
@@ -53,7 +39,6 @@ $(document).on('turbolinks:load',function(){
         var size = $('aside.right').height() - 93;
         size = size + 'px';
         if ($('.container').width() <= 1020 ){
-
                   $('.content').css('height', size ) ;
                   $('.content').css('overflow','scroll');
                   $('.content').css('padding-left','10px');
