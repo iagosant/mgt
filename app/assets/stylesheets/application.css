@@ -389,7 +389,7 @@ a{
   color: #7A7A7A;
 	text-decoration:none;
 	font-weight:500;
-  font-size: 20px;
+  font-size: 15px;
 	/*margin:0 34px;*/
   font-family: "Helvetica Neue";
   line-height: 50px;
@@ -400,7 +400,7 @@ a{
   display: inline-block;
 	float:left;
 	margin:0;
-	padding: 0 4%;
+	padding: 0 4.5%;
 }
 
 #primary_nav_wrap ul li a:hover:not(.active) {
@@ -497,4 +497,20 @@ h3.info {
   section.left {
     padding: 20px 3% 0px;
   }
+}
+
+.disclaimer{
+  /*color: #7A7A7A;*/
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+}
+
+.list_container {
+  color: #7A7A7A;
+  /*text-transform: uppercase;*/
+  font-size: 17px;
+  overflow: auto;
+  height: 744px;
+  text-align: justify;
 }

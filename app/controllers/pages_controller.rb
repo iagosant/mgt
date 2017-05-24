@@ -15,4 +15,8 @@ class PagesController < ApplicationController
 
   def inourwords
   end
+
+  def donor_list
+  end
+
 end
