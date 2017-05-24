@@ -1,14 +1,21 @@
+<div class="mobile-toggle">
+  <!-- <a href="#menuExpand"><i class="material-icons">&#xE8EE;</i></a> -->
+         <span></span>
 
+</div>
 <nav id="primary_nav_wrap">
-<ul>
-  <li><%= link_to 'TO MIKE, FROM US' , root_path, class: current_page?(root_path) ? 'active' : 'nil' %></li>
-  <li><%= link_to 'ABOUT MIKE' , about_path, class: current_page?(about_path) ? 'active' : 'nil' %></li>
-  <li><%= link_to 'IN OUR WORDS', '#',class: (!current_page?(about_path) && !current_page?(root_path)) ? 'active' : 'nil' %>
-    <% if !@donees.empty? %>
-      <ul>
-        <%= render partial: "layouts/top_menu_li", collection: @donees, as: :donee %>
-      </ul>
-    <% end %>
-  </li>
-</ul>
+
+  <div class="nav-menu">
+    <ul>
+      <li><%= link_to 'TO MIKE, FROM US' , root_path, class: current_page?(root_path) ? 'active' : 'nil' %></li>
+      <li><%= link_to 'ABOUT MIKE' , about_path, class: current_page?(about_path) ? 'active' : 'nil' %></li>
+      <li><%= link_to 'IN OUR WORDS', '#',class: (!current_page?(about_path) && !current_page?(root_path)) ? 'active' : 'nil' %>
+        <% if !@donees.empty? %>
+          <ul>
+            <%= render partial: "layouts/top_menu_li", collection: @donees, as: :donee %>
+          </ul>
+        <% end %>
+      </li>
+    </ul>
+  </div>
 </nav>
