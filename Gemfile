@@ -37,7 +37,7 @@ group :production do
   # gem 'pg'
   gem 'bcrypt'
   gem 'whenever', require: false
-
+  gem 'pg'
 end
 
 group :development, :test do
