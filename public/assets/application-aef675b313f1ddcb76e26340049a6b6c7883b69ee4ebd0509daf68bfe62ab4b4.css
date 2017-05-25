@@ -389,7 +389,7 @@ a{
   color: #7A7A7A;
 	text-decoration:none;
 	font-weight:500;
-  font-size: 15px;
+  font-size: 20px;
 	/*margin:0 34px;*/
   font-family: "Helvetica Neue";
   line-height: 50px;
@@ -400,7 +400,7 @@ a{
   display: inline-block;
 	float:left;
 	margin:0;
-	padding: 0 4.5%;
+	padding: 0 4%;
 }
 
 #primary_nav_wrap ul li a:hover:not(.active) {
@@ -497,54 +497,4 @@ h3.info {
   section.left {
     padding: 20px 3% 0px;
   }
-}
-@media (min-width: 1200px) {
-  .list.left, .list.right{
-    display: inline-block!important;
-  }
-  .list.right {
-    float: right;
-  }
-}
-
-.disclaimer{
-  position: relative;
-  top: -25px;
-  color: rgba(122, 122, 122, 0.84);
-  font-size: 15px;
-  text-align: center;
-  font-style: italic;
-}
-
-.list_container {
-  color: #7A7A7A;
-  /*text-transform: uppercase;*/
-  font-size: 17px;
-  overflow: auto;
-  height: 744px;
-  text-align: justify;
-  padding-right: 15px;
-
-}
-
-/*  Scroll styles  */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-
-::-webkit-scrollbar-track {
-   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-   border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb {
-   border-radius: 3px;
-   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-
-/*  END Scroll styles  */
-
-.list.left, .list.right{
-  display: block;
 }
