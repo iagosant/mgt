@@ -4,7 +4,7 @@
   <li><%= link_to 'TO MIKE, FROM US' , root_path, class: current_page?(root_path) ? 'active' : 'nil' %></li>
   <li><%= link_to 'ABOUT MIKE' , about_path, class: current_page?(about_path) ? 'active' : 'nil' %></li>
   <li><%= link_to 'DONORS' , donor_list_path, class: current_page?(donor_list_path) ? 'active' : 'nil' %></li>
-  <li><%= link_to 'IN OUR WORDS', '#',class: (!current_page?(about_path) && !current_page?(root_path)) ? 'active' : 'nil' %>
+  <li><%= link_to 'IN OUR WORDS', '#',class: (!current_page?(about_path) && !current_page?(donor_list_path) && !current_page?(root_path)) ? 'active' : 'nil' %>
     <% if !@donees.empty? %>
       <ul>
         <%= render partial: "layouts/top_menu_li", collection: @donees, as: :donee %>
