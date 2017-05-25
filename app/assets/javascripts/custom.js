@@ -46,4 +46,9 @@ $(document).on('turbolinks:load',function(){
            }
 
     });
+
+    $("#menutoggle").click(function() {
+					$('#primary_nav_wrap').toggleClass('displaynone');
+
+					});
 });
