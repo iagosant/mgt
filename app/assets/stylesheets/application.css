@@ -120,23 +120,13 @@ h2 {
   font-size: 18px;
   line-height: 32px;
   padding-bottom: 30px;
-  /*padding-top: 71px;*/
-  /*VIDEO OFF WHEN THIS IS ON*/
-  /*overflow: auto;
-  height: 882px;
-  text-align: justify;*/
-    /*VIDEO OFF WHEN THIS IS ON*/
+  padding-top: 70px;
 }
 
 .scroll{
-/*font-size: 18px;
-line-height: 32px;
-padding-bottom: 30px;*/
-/*VIDEO OFF WHEN THIS IS ON*/
-overflow: auto;
-height: 744px;
-text-align: justify;
-  /*VIDEO OFF WHEN THIS IS ON*/
+  overflow: auto;
+  height: 744px;
+  text-align: justify;
 }
 
 #aboutMike {
@@ -201,7 +191,7 @@ h4#tagline {
     font-size: 12px
     line-height: 18px;
     padding-bottom: 10px;
-    margin-top: 71px;
+    /*margin-top: 71px;*/
 }
 
 h3#scholarship {
@@ -320,18 +310,6 @@ a{
   text-transform: uppercase;
 }
 
-/*.blurb {
-    font-family: "Helvetica Neue";
-    font-size: 25px;
-    text-align: left;
-    line-height: 37px;
-    color: #000000;
-}
-
-.blurb p {
-  font-style: italic;
-}*/
-
 .donee {
     text-align: center;
     font-family: "Helvetica Neue";
@@ -346,7 +324,6 @@ a{
   font-size: 25px;
   text-align: center;
   line-height: 33px;
-  /*font-weight: bold;*/
   color: #000000;
 }
 
@@ -419,10 +396,6 @@ a{
 #primary_nav_wrap ul li a.active {
     border-bottom: 5px solid #F8E71C;
 }
-
-/*#primary_nav_wrap ul ul li a.active {
-    border: none;
-}*/
 
 #primary_nav_wrap ul ul{
 	display:none;
@@ -712,10 +685,6 @@ button.button {
   section.left {
     padding: 20px 3% 0px;
   }
-
-
-
-
 }
 
 @media (max-width: 1200px) {
@@ -762,31 +731,31 @@ button.button {
 }
 @media (min-width: 1400px) {
 
-  #primary_nav_wrap > ul a {
-    font-size: 16px;
-  }
-
-.wrapper {
-    margin: 0 auto;
-    max-width: 1438px;
-  }
-
-  h3#scholarship {
-      padding-top: 45px!important;
-      font-size: 43px!important;
-      font-weight: bold;
-      line-height: 55px!important;
+    #primary_nav_wrap > ul a {
+      font-size: 16px;
     }
 
-  h4#tagline {
-      font-size: 28px!important;
-      line-height: 36px!important;
-      padding-bottom: 10px!important;
+    .wrapper {
+      margin: 0 auto;
+      max-width: 1438px;
+    }
 
-  }
-  .content{
-    margin-top: 70px!important;
-  }
+    h3#scholarship {
+        padding-top: 45px!important;
+        font-size: 43px!important;
+        font-weight: bold;
+        line-height: 55px!important;
+      }
+
+    h4#tagline {
+        font-size: 28px!important;
+        line-height: 36px!important;
+        padding-bottom: 10px!important;
+    }
+
+    .content{
+      /*margin-top: 70px!important;*/
+    }
 
 }
 
