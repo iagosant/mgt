@@ -2,7 +2,19 @@
   <h4 id="tagline">Help us keep Mike's passion for cinema alive.</h4>
   <h3 id="scholarship">MICHAEL G. THIBODEAU Jr. MEMORIAL SCHOLARSHIP</h3>
   <div class="video">
-    <video src="http://pro-secur.com/video/MIKE+VIDEO+FINAL.mp4" poster="" loop id="idvideo"></video >
+    <!-- <video src="http://pro-secur.com/video/MIKE+VIDEO+FINAL.mp4" poster="" loop id="idvideo"></video > -->
+    <!-- begin video -->
+      <video width="100%" height="100%" controls autoplay id="idvideo">
+        <source src="http://pro-secur.com/video/MIKE+VIDEO+FINAL.mp4"  type="video/mp4" />
+        <source src="http://pro-secur.com/video/tomikefromOGV.ogv"  type="video/ogg" />
+        <object width="100%" height="100%" type="application/x-shockwave-flash" data="player.swf">
+          <param name="movie" value="player.swf" />
+          <param name="flashvars" value="autostart=true&amp;controlbar=over&amp;image=http://pro-secur.com/video/video.png&amp;file=http://pro-secur.com/video/MIKE+VIDEO+FINAL.mp4" />
+          <img src="http://pro-secur.com/video/video.png" width="640" height="360" alt="To Mike from us"
+               title="No video playback capabilities, please download the video below" />
+        </object>
+      </video>
+    <!-- end video -->
       <div class="overlay valign-wrapper" id="video_overlay">
         <div class="text center"><i class="volume material-icons" font-size="50px">volume_off</i></div>
       </div>
