@@ -897,6 +897,15 @@ button.button {
   font-style: italic;
 }
 
+.disclaimer2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*color: #7A7A7A;*/
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+}
+
 .list_container {
   color: #7A7A7A;
   /*text-transform: uppercase;*/
